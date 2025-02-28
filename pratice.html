@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemanth</title>
+</head>
+<body>
+    <div class="root"></div>
+</body>
+    <script>
+        const root = document.querySelector(".root");
+        // const h = document.createElement("h1")
+        // root.appendChild(h)
+        // h.setAttribute("id","2")
+        
+        // h.innerText = "hemanth"
+        // // const child = h1.createTextNode("Hemanth");
+        // console.log(h)
+        
+        // h.innerText = "Hemanth ILU";
+        // h.style.backgroundColor = "black";
+        // h.style.color = "white";
+        const ul = document.createElement("ul")
+        root.appendChild(ul)
+        function addli(lang){
+            const li = document.createElement("li");
+            li.innerText = `${lang}`;
+            ul.appendChild(li);
+        }
+        addli("python");
+        addli("ruby");
+        addli("cpp");
+        addli("swift");
+        addli("js");
+        addli("java");
+    </script>
+</html>
